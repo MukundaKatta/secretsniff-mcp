@@ -1,0 +1,21 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.MukundaKatta/secretsniff",
+  "description": "Scan text/code for accidentally-committed secrets — AWS/GitHub/Slack/Stripe keys, JWTs, RSA private keys, and high-entropy strings.",
+  "version": "0.1.0",
+  "repository": {
+    "url": "https://github.com/MukundaKatta/secretsniff-mcp",
+    "source": "github"
+  },
+  "websiteUrl": "https://github.com/MukundaKatta/secretsniff-mcp",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "@mukundakatta/secretsniff-mcp",
+      "version": "0.1.0",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}

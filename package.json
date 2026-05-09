@@ -1,0 +1,59 @@
+{
+  "name": "@mukundakatta/secretsniff-mcp",
+  "version": "0.1.0",
+  "mcpName": "io.github.MukundaKatta/secretsniff",
+  "description": "MCP server: scan text/code for accidentally-committed secrets — AWS/GitHub/Slack/Stripe keys, JWTs, RSA private keys, and high-entropy strings. Built for Claude Desktop, Cursor, Cline, Windsurf, and Zed.",
+  "type": "module",
+  "bin": {
+    "mcp-secretsniff": "dist/server.js"
+  },
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "tsx src/server.ts",
+    "test": "node --test --import tsx test/*.test.ts",
+    "lint": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "claude",
+    "cursor",
+    "cline",
+    "windsurf",
+    "zed",
+    "secrets",
+    "scanner",
+    "security",
+    "compliance",
+    "pre-commit"
+  ],
+  "author": "Mukunda Katta <mukunda.vjcs6@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/MukundaKatta/secretsniff-mcp#readme",
+  "bugs": {
+    "url": "https://github.com/MukundaKatta/secretsniff-mcp/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MukundaKatta/secretsniff-mcp.git"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.7.0",
+    "typescript": "^5.4.0",
+    "@types/node": "^20.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ]
+}
